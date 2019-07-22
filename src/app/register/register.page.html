@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title><img style="border-radius: 50%;" src="assets\Dove.jpg" width="80" height="80">Dovey-register.</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+    <ion-card style="background-color: rgb(202, 198, 192)">
+        <ion-card-header>
+          <ion-card-title>User Information.</ion-card-title>
+        </ion-card-header>
+
+    <ion-card-content>
+    Name: <ion-input [(ngModel)]="name" placeholder="enter name"></ion-input><br>
+    Email: <ion-input [(ngModel)]="email" placeholder="enter email" ></ion-input><br>
+    Password: <ion-input [(ngModel)]="password"  type="password"></ion-input><br>
+    <ion-button (click)="register()" color="primary">submit</ion-button><br>
+    <a routerLink='/login'> Back to login Page..</a>
+
+  </ion-card-content>
+</ion-card>
+</ion-content>
